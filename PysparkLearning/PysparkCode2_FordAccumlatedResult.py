@@ -27,3 +27,4 @@ rdd2 = rdd1.groupby(rdd1["year"]) \
     #.show(truncate=False)
 
 rdd2.write.mode(saveMode="overwrite").json("/Users/saim/Documents/Svk_Work/Learning_Documents/Spark_PySpark/PySparkCodeResult")
+rdd2.write.csv("/Users/saim/Documents/Svk_Work/Learning_Documents/Spark_PySpark/PySparkCodeResult")
